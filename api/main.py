@@ -22,9 +22,9 @@ def read_file_as_image(data) -> np.ndarray:
 async def predict(file: UploadFile = File(...)):
     image = read_file_as_image(await file.read())
     img_batch = np.expand_dims(image , axis=0)
-    prediction = MODEL.predict(img_batch)
-    print(prediction)
-    return prediction[0]
+    prediction = MODEL.predict(img_batch)[0]
+    print(CLASS_NAMES[np.argmax(prediction)])
+    print("Confidence :",np.max(prediction))
     pass
 
 
