@@ -28,3 +28,10 @@ It contains a total of 16,074 labeled images of potato leaves, including 5,376 i
    cd api
    python main.py
   ```
+  
+  ### Run Website
+  ```
+    cd frontend
+    npm install --from-lock-json
+    npm start
+  ```
