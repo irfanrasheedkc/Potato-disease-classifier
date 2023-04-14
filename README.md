@@ -15,3 +15,16 @@ It contains a total of 16,074 labeled images of potato leaves, including 5,376 i
 - TensorFlow 2.4.0
 - NumPy 1.19.3
 - Matplotlib 3.3.3
+
+## How To Use?
+
+### Clone repository
+```
+  git clone https://github.com/irfanrasheedkc/Potato-disease-classifier
+ ```
+ 
+ ### Run FastAPI
+ ```
+   cd api
+   python main.py
+  ```
